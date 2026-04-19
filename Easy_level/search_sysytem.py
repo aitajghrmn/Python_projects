@@ -5,7 +5,12 @@ users = [
 ]
 
 search_name = input("Enter name: ")
+found = False
 
 for u in users:
     if search_name == u["name"]:
         print(u)
+        found = True
+
+if found == False:
+    print("User not found")
